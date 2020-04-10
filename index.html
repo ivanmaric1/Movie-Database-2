@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="program.js" defer>
+    <title>MovieDatabase 2.0</title>
+</head>
+<body>
+<div class="container">
+    <section class="movie frame">
+        <label for="">Favorite Movie
+            <input type="text" class='movie__title'>
+        </label>
+        <section class="movie__extra">
+            <label for="">Extra Information (Name)
+                <input type="text" class='movie__extra--name'>
+            </label>
+            <label for="">Extra Information (Value)
+                <input type="text" class='movie__extra--value'>
+            </label>
+        </section>
+        <button class="btn">Add Movie</button>
+    </section>
+
+    <section class="search frame">
+        <label for="search__input">Filtered by Title
+            <input type="text" class='search__input'>
+        </label>
+        <button class='btn'>Search</button>
+    </section>
+
+    <section class="output frame frame--output"></section>
+</div>
+</body>
+</html>

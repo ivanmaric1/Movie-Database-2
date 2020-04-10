@@ -1,0 +1,81 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  --color-primay: #eff0eb;
+  --color-secondary: #777;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.frame {
+  background-color: var(--color-primay);
+  padding: 2rem 0rem 2rem 2.5rem;
+  margin: 1.5rem;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+
+.movie input {
+  width: 94%;
+}
+
+.movie input[type='text'] {
+  margin: .5rem 0rem 2rem 0rem;
+  background-color: var(--color-primay);
+  border: none;
+  border-bottom: 3px solid var(--color-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.movie input[type='text']:focus {
+  outline: none;
+  border-bottom: 3px solid red;
+}
+
+.movie__extra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie__extra input {
+  width: 87%;
+  font-size: 1.5rem;
+}
+
+.search input {
+  width: 94%;
+  margin: .5rem 0rem 2rem 0rem;
+  background-color: var(--color-primay);
+  border: none;
+  border-bottom: 3px solid var(--color-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search input:focus {
+  outline: none;
+  border-bottom: 3px solid red;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: .6rem;
+  background-color: #FF496F;
+  border: 2px solid var(--color-secondary);
+  -webkit-transition: all .7s;
+  transition: all .7s;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid red;
+  background-color: var(--color-secondary);
+  color: #FF496F;
+}
+/*# sourceMappingURL=main.css.map */
