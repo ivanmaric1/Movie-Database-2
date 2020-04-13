@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     --color-primay: #eff0eb; 
     --color-secondary: #777; 
+    --color-live: #FF496F;
 }
 
 .container {
@@ -11,7 +12,7 @@
 
 .frame {
     background-color: var(--color-primay);
-    padding: 2rem 0rem 2rem 2.5rem;
+    padding: 1.2rem 0rem 1.2rem 2.5rem;
     margin: 1.5rem;
     border-radius: 15px;
     font-size: 1.3rem;
@@ -23,7 +24,7 @@
     }
 
      input[type='text'] {
-        margin: .5rem 0rem 2rem 0rem;
+        margin: .5rem 0rem 1.2rem 0rem;
         background-color: var(--color-primay);
         border: none;
         border-bottom: 3px solid var(--color-secondary);
@@ -32,7 +33,7 @@
 
         &:focus {
             outline: none;
-            border-bottom: 3px solid red;
+            border-bottom: 3px solid var(--color-live);
         }
     }
 
@@ -49,7 +50,7 @@
 .search {
         input {
             width: 94%;
-            margin: .5rem 0rem 2rem 0rem;
+            margin: .5rem 0rem 1.2rem 0rem;
             background-color: var(--color-primay);
             border: none;
             border-bottom: 3px solid var(--color-secondary);
@@ -58,7 +59,7 @@
 
             &:focus {
                 outline: none;
-                border-bottom: 3px solid red;
+                border-bottom: 3px solid var(--color-live);
             }
         }
 }
@@ -67,15 +68,40 @@
     font-family: inherit;
     font-size: 1.5rem;
     padding: .6rem;
-    background-color: #FF496F;
+    background-color: var(--color-live);
     border: 2px solid var(--color-secondary);
     transition: all .7s;
     font-weight: 500;
     cursor: pointer;
 
     &:hover {
-        border: 2px solid red;
+        border: 2px solid var(--color-live);
         background-color: var(--color-secondary);
-        color: #FF496F;
+        color: var(--color-live);
+    }
+}
+
+// Dom - kreirani element
+.output__list {
+        list-style: none;
+
+        li {
+            .output__item {
+                display: flex;
+                justify-content: space-between;
+            
+            .movie__name {
+                font-size: 2rem;
+                font-weight: 600;
+                margin-top: 0;
+            }
+            
+            a {
+                text-decoration: none;
+                margin-right: 70px;
+                color: var(--color-live);
+                font-weight: 900;
+            }
+        }
     }
 }
